@@ -140,6 +140,12 @@ section ol{
         grid-template-columns: 1fr;
     }
 
+    .section-card-img img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
     .section-card-text{
         justify-content: end;
         gap: 1rem;
