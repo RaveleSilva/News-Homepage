@@ -149,6 +149,7 @@ section ol{
 
     .section-card-img img{
         max-height: 200px;
+        justify-content: end;
     }
 }
 
