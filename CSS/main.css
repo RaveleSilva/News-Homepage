@@ -100,6 +100,8 @@ section ol{
 
 .section-card-img{
     grid-column: 1 / 2;
+    display: grid;
+    align-items: end;
 }
 
 .section-card span,
@@ -141,11 +143,6 @@ section ol{
     .section-card-text{
         justify-content: end;
         gap: 1rem;
-    }
-
-    .section-card-img img{
-        max-height: 200px;
-        justify-content: end;
     }
 }
 
