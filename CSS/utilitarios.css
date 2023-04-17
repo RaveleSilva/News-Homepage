@@ -2,14 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-.font-1-n{
-    font: normal 1rem/1.5 'Inter', sans-serif;
+.font-1-s{
+   font: 400 12px/1.5 'Inter', sans-serif;
+}
+
+.font-1-n,
+.font-1-m{
+    font: 400 1rem/1.5 'Inter', sans-serif;
+}
+
+.font-1-m{
+   font-weight: 500;
 }
 
 .font-2-sb,
-.button-font{
+.button-font,
+.font-2-b{
     font: 600 20px/1.5 'Inter', sans-serif;
 }
+
+.font-2-b{
+   font-weight: 700;
+}
+
 
 .font-3-sb{
     font: 600 24px/1.5 'Inter', sans-serif;
@@ -24,12 +39,13 @@
 }
 
 .font-6-b{
-    font: 700 52px/1.2 'Inter', sans-serif;
+    font: 700 64px/1.1 'Inter', sans-serif;
 }
 
 .button-font{
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-size: 1rem;
 }
 
  /* Cores */
@@ -43,3 +59,57 @@
     --cor-2: hsl(236, 13%, 42%);
     --cor-3: hsl(240, 100%, 5%);
  }
+
+ .cor-p1{
+    color: var(--cor-p1);
+ }
+
+ .cor-p2{
+    color: var(--cor-p2);
+ }
+
+ .cor-0{
+    color: var(--cor-0);
+ }
+ .cor-1{
+    color: var(--cor-1);
+ }
+ .cor-2{
+    color: var(--cor-2);
+ }
+ .cor-3{
+    color: var(--cor-3);
+ }
+
+ /* configurações padrões */
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+ img{
+    width: 100%;
+    height: auto;
+    display: block;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+ ul{
+    list-style-type: none;
+ }
+
+ /* Componentes */
+
+ .container{
+    max-width: 1400px;
+    margin: auto;
+ }
+
+
+
+ 
