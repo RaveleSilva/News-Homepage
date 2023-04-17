@@ -143,6 +143,10 @@ section ol{
         gap: 1rem;
     }
 
+    .section-card-img{
+        justify-content: end;
+    }
+
     .section-card-img img{
         max-height: 200px;
     }
