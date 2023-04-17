@@ -69,16 +69,20 @@ aside h3{
     transition: 0.4s;
 }
 
-aside .aside-article:nth-child(2) p,
-aside .aside-article:nth-child(3) p{
+aside .aside-article:nth-child(1) p,
+aside .aside-article:nth-child(2) p{
     padding-bottom: 32px;
     border-bottom: 1px solid;
 }
 
 section{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 / -1;
+}
+
+section ol{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
 }
 
@@ -110,6 +114,50 @@ section{
     flex-direction: column;
     justify-content: space-between;
 }
+
+@media (max-width: 800px){
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    article{
+        grid-column: 1 / -1;
+    }
+
+    aside{
+        grid-column: 1 / 2;
+    }
+}
+
+@media (max-width: 750px){
+    article{
+        grid-template-columns: 1fr;
+    }
+
+    section ol{
+        grid-template-columns: 1fr;
+    }
+
+    .section-card-text{
+        justify-content: end;
+        gap: 1rem;
+    }
+
+    .section-card-img img{
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 450px){
+    .section-card-text h4{
+        font-size: 1rem;
+    }
+
+    .section-card-text p{
+        font-size: 14px;
+    }
+}
+
 
 
 
