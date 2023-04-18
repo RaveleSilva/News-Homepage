@@ -45,6 +45,17 @@ header{
 #backshadow.ativo{
     display: block;
 }
+
+.menu-button{
+    height: 56px;
+    width: 64px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: -13px;
+    z-index: 1;
+    cursor: pointer;
+}
  
 .line{
     width: 100%;
