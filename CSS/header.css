@@ -25,18 +25,32 @@ header{
 
 .menu-hamburger{
     display: none;
-    width: 72px;
+    width: 64px;
     gap: 6px;
     flex-direction: column;
     cursor: pointer;
     position: relative;
-  }
+}
+
+#backshadow{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#backshadow.ativo{
+    display: block;
+}
  
-  .line{
+.line{
     width: 100%;
     height: 6px;
     background-color: var(--cor-3);
-  }
+}
 
 @media (max-width: 800px){
     .header-nav{
@@ -46,9 +60,9 @@ header{
         width: 0px;
         top: 0px;
         right: 0px;
-        height: 100vh;
+        height: 100%;
         padding-top: 200px;
-        background-color: var(--cor-1);
+        background-color: var(--cor-0);
     }
     
     .menu-hamburger{
