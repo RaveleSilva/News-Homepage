@@ -52,7 +52,7 @@ header{
     position: absolute;
     background-color: transparent;
     border: none;
-    top: -13px;
+    top: -18px;
     z-index: 1;
     cursor: pointer;
 }
