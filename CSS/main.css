@@ -89,6 +89,7 @@ section ol{
 .section-card{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-content: end;
     gap: 20px;
     cursor: pointer;
 }
@@ -99,22 +100,22 @@ section ol{
 }
 
 .section-card-img{
-    grid-column: 1 / 2;
-    display: grid;
-    align-items: end;
+    align-self: end;
+    height: 140px;
 }
 
-.section-card span,
-.section-card p,
-.section-card h4{
-    grid-column: 2 / 3;
-    align-self: start;
+.section-card-img img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .section-card-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    grid-column: 2 / 3;
+    justify-content: flex-end;
+    gap: 0.5rem;
 }
 
 @media (max-width: 800px){
@@ -140,15 +141,13 @@ section ol{
         grid-template-columns: 1fr;
     }
 
-    .section-card-img img{
+    .section-card-img{
         height: 100%;
-        object-fit: cover;
-        object-position: center;
     }
 
     .section-card-text{
         justify-content: end;
-        gap: 1rem;
+        gap: 12px;
     }
 }
 
